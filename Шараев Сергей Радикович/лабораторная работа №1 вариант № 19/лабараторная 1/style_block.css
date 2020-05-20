@@ -1,0 +1,151 @@
+*{margin: 0; padding: 0;}
+footer, nav, header, section, aside {
+ 
+display: block
+ 
+}
+body{
+background-image: linear-gradient(to bottom, white, orange);
+}
+wrapper{
+wight: 1024px;
+    
+margin: auto;
+background: white;
+}
+
+header{
+height: 82px;
+max-width: 80%;
+margin-left: 10%;
+text-align: left; 
+background-image:url("img/back2.jpg");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    webkit-background-size: cover;
+    moz-background-size: cover;
+    o-background-size: cover;
+    background-size: cover;
+}
+
+nav{
+height:110px;
+background: white;
+    padding-top: 5px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 10%;
+    padding-top: 4px;
+        
+    }
+li {
+  display: table;
+  margin: 0;
+  padding: 10px 30px;
+  background: white;
+  font-family: 'Roboto', sans-serif;
+    }
+li:hover{background-color: darkorange}
+section{
+  height:auto;
+background-color:darkgray;
+    width: 80%;
+    margin-left: 10%;
+    padding:1px;
+     text-align: justify;
+}
+section h1{text-align: center;}
+section h2{text-align: center;}
+section p{margin: 0px;}
+
+footer{
+height:40px;
+    width: 80%;
+    margin-left: 10%;
+background: purple;
+    text-align: center;
+} 
+@keyframes fadeIm-1
+{
+    from    { opacity: 1; }
+    16%     { opacity: 1; }
+    25%     { opacity: 0; }
+    91%     { opacity: 0; }
+    to      { opacity: 1; }
+}
+ 
+@keyframes fadeIm-2
+{
+    from    { opacity: 0; }
+    16%     { opacity: 0; }
+    25%     { opacity: 1; }
+    41%     { opacity: 1; }
+    50%     { opacity: 0; }
+    to      { opacity: 0; }
+}
+ 
+@keyframes fadeIm-3
+{
+    from    { opacity: 0; }
+    41%     { opacity: 0; }
+    50%     { opacity: 1; }
+    66%     { opacity: 1; }
+    75%     { opacity: 0; }
+    to      { opacity: 0; }
+}
+ 
+@keyframes fadeIm-4
+{
+    from    { opacity: 0; }
+    66%     { opacity: 0; }
+    75%     { opacity: 1; }
+    91%     { opacity: 1; }
+    to      { opacity: 0; }
+}
+ 
+.div-style
+{
+    
+    position:relative; 
+    text-align: left; 
+    width: 99%; 
+}
+ 
+.img-style
+{
+    width: 33.3%;
+   
+    border: 1px solid #0000ff;
+    left: 0%;
+    animation-duration: 24s;
+    animation-iteration-count: infinite;
+}
+ 
+.img-style.next
+{
+    position: absolute;
+    left: 0%;
+    opacity: 0;
+}
+ 
+.img-style.im-1
+{ 
+    animation-name: fadeIm-1;
+}
+ 
+.img-style.next.im-2
+{ 
+    animation-name: fadeIm-2;
+}
+ 
+.img-style.next.im-3
+{
+    animation-name: fadeIm-3;
+}
+ 
+.img-style.next.im-4
+{
+    animation-name: fadeIm-4;
+}
